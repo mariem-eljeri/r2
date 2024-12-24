@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>Application2</title> 
+<script src="fonctions.js"></script>
+</head>
+<body>
+<h1 align="center">INSCRIPTION</h1>
+<form method="post" name="F"  action=" remerciment.html"  >
+<fieldset><legend>Données	Personnelles:</legend>
+<table>
+<tr>
+	<td>Nom: </td>
+	<td colspan="2"><input type="text" name="T1"></td>
+</tr>
+<tr>
+	<td>Prénom: </td>
+	<td colspan="2"><input type="text" name="T2"></td>
+</tr>
+<tr>
+	<td>Année de naissance:</td>
+	<td colspan="2"><select name="Annee">
+	<script>RemplirAnnees();</script>
+	</select></td>
+</tr>
+<tr>
+	<td>Sexe: </td>
+	<td><input   type="radio"   name="R1"  value="H">Homme</td>
+	<td><input type="radio" name="R1" value="F">Femme</td>
+</tr>
+<tr>
+	<td>Etat civil:</td>
+	<td><input type="radio" name="R2" value="M">Marié (e) </td>
+	<td><input type="radio" name="R2" value="C">Célibataire</td>
+</tr>
+</table>
+</fieldset>
+<fieldset><legend>Données	de Connexion:</legend>
+<table>
+<tr>
+<td>Email:</td>
+<td><input type="text" name="T3"></td>
+</tr>
+<tr>
+<td>Mot de passe:</td>
+<td><input type="text" name="T4"></td>
+</tr>
+<tr>
+<td colspan="2">
+<input type="checkbox" name="C1">
+J'ai lu et j'accepte  les <a href="condition.txt">cond	d'util</a> du Site Web
+</td>
+</tr>
+</table>
+</fieldset>
+<fieldset>
+<center>
+<input type="button" value="S'inscrire" onclick="return verif();">
+<input type="reset" value="Annuler">
+</center>
+</fieldset>
+</form>
+</body>
+</html>
